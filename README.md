@@ -12,3 +12,19 @@ You can also override the default donation address by calling a specific functio
 ## General Information
 
 ## MINING SPECIFICATION
+THERE'S NO LIMIT TO THE COIN SUPPLY
+There is no limit to the coin supply
+Reward follow more or less the same emission rate as dogecoin
+```python
+FUNCTION GETMININGREWARD() PUBLIC CONSTANT RETURNS (UINT) {
+        BYTES32 DIGEST = SOLUTIONFORCHALLENGE[CHALLENGENUMBER];
+        IF(EPOCHCOUNT > 160000) RETURN (50000   * 10**UINT(DECIMALS) );//  14.4 M/DAY 
+        IF(EPOCHCOUNT > 140000) RETURN (75000   * 10**UINT(DECIMALS) ); //  21.6 M/DAY
+        IF(EPOCHCOUNT > 120000) RETURN (125000  * 10**UINT(DECIMALS) ); //  36.0 M/DAY
+        IF(EPOCHCOUNT > 100000) RETURN (250000  * 10**UINT(DECIMALS) ); //  72.0 M/DAY
+        IF(EPOCHCOUNT > 80000) RETURN  (500000  * 10**UINT(DECIMALS) ); // 144.0 M/DAY
+        IF(EPOCHCOUNT > 60000) RETURN  (1000000 * 10**UINT(DECIMALS) ); // 288.0 M/DAY
+        IF(EPOCHCOUNT > 40000) RETURN  ((UINT256(KECCAK256(DIGEST)) % 2500000) * 10**UINT(DECIMALS) );   // 360.0 M/DAY
+        IF(EPOCHCOUNT > 20000) RETURN  ((UINT256(KECCAK256(DIGEST)) % 3500000) * 10**UINT(DECIMALS) );   // 504.0 M/DAY
+                               RETURN  ((UINT256(KECCAK256(DIGEST)) % 5000000) * 10**UINT(DECIMALS) );   // 720
+```                               
