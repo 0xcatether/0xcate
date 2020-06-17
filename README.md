@@ -2,17 +2,19 @@
 
 CatEther introduces a new mechanic: "Proof of Use"
 
-Each time you successfully make a transaction it will create 1 token, sending 0.5 to your address and the other 0.5 to an address of your choice.
+To understand the concept proof of use we can expose a practical use case: the token reward from transfer is meant to cover the gas fee for transaction, aiming to make it free or lower transaction cost rewarding the sender with 0xcate token.
 
-If the Donation Address is not set it will be burnt by default.
-Free donations, or free CATE transfers: It's up to you.
+Each time you successfully make a transaction it will create 1 token, sending 0.5 to your address and the other 0.5 to an address of your choice.
+You can just send a transaction of 0 CATE and this will create 1 token.
+
+If the Donation Address is not set it will be lost by default.
 
 You can also override the default donation address by calling a specific function : "transferAndDonateTo".
 
 ## General Information
 
 ## MINING SPECIFICATION
-THERE'S NO LIMIT TO THE COIN SUPPLY
+
 There is no limit to the coin supply
 Reward follow more or less the same emission rate as dogecoin
 ```python
@@ -28,3 +30,6 @@ FUNCTION GETMININGREWARD() PUBLIC CONSTANT RETURNS (UINT) {
         IF(EPOCHCOUNT > 20000) RETURN  ((UINT256(KECCAK256(DIGEST)) % 3500000) * 10**UINT(DECIMALS) );   // 504.0 M/DAY
                                RETURN  ((UINT256(KECCAK256(DIGEST)) % 5000000) * 10**UINT(DECIMALS) );   // 720
 ```                               
+
+0xCATE is a mineable token on ethereum. 
+
