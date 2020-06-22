@@ -33,3 +33,4 @@ FUNCTION GETMININGREWARD() PUBLIC CONSTANT RETURNS (UINT) {
 
 0xCATE is a mineable token on ethereum. 
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
