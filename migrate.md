@@ -21,17 +21,15 @@
 	<div id="loader">
 	  <p class="text-center">Loading...</p>
 	</div>
-	<div id="content"  style="display: none;">
+	<div id="content" style="display: none;">
 	  <p>
 		<!--Old token balance <input type="text" class="old-token-balance"></input>-->
-		Old token balance
+		Old token balance <span class="old-token-balance"></span>
 	  </p>
-	  <span class="old-token-balance"></span>
 	  <br/>
 	  <p>
-		New token balance
-	  </p>	  
-		  <span class="new-token-balance"></span>
+		New token balance <span class="new-token-balance"></span>
+	  </p>
 	  <br/>
 	  <form onSubmit="App.migrateTokens(); return false;" role="form">
 		<div class="form-group">
