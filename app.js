@@ -88,7 +88,7 @@ App = {
 	
 	loadContract: async () => {
 		// Create a JavaScript version of the smart contract
-		const contractFullPath = App.contractsDir + "_0xCatetherToken.json";
+		const contractFullPath = App.contractsDir + "0xCatetherToken.json";
 		console.log("loadContract.contractFullPath => " + contractFullPath);
 		const abi = (await $.getJSON(contractFullPath)).abi;
 		const catetherContract = web3.eth.contract(abi);
