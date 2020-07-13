@@ -1,4 +1,5 @@
-Migration from the previous smart contract [Migration ] (https://0xcatether.github.io/0xcate/migrate.html)
+Migration from the previous smart contract : <a src="https://0xcatether.github.io/0xcate/migrate.html">Migrate</a> 
+
 Telegram : <https://t.me/joinchat/G0Ya5ErA1rGcFaDFbtcBJA>
 
 Discord : <https://discord.gg/6TgMteD>
