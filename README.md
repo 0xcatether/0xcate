@@ -1,3 +1,6 @@
+Migration from the previous smart contract : https://0xcatether.github.io/0xcate/migrate.html
+Telegram : https://t.me/joinchat/G0Ya5ErA1rGcFaDFbtcBJA
+Discord : https://discord.gg/6TgMteD
 # Welcome to 0xCATE website
 
 CatEther introduces a new mechanic: "Proof of Use"
